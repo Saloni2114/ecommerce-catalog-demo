@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>E-Commerce Catalog API</title>
+<title>E-Commerce Catalog Demo</title>
+<style>
+body{font-family:Arial;padding:40px;background:#f5f5f5}
+.box{background:white;padding:20px;margin-bottom:20px;border-radius:8px}
+</style>
 </head>
+
 <body>
-<h1>E-Commerce Catalog Project</h1>
-<p>This is a Node.js + MongoDB backend project.</p>
 
-<h2>GitHub Repository</h2>
-<a href="https://github.com/YOURUSERNAME/ecommerce-catalog-demo">
-View Source Code
-</a>
+<h1>E-Commerce Catalog Aggregation Results</h1>
 
-<p>API runs locally using Node.js server.</p>
+<div class="box">
+<h2>Low Stock Products</h2>
+<pre>
+[
+ { name: "T-Shirt", sku: "12345", color: "red", size: "M", price: 19.99, stock: 5 },
+ { name: "Headphones", sku: "96765-B", color: "black", price: 35.99, stock: 2 }
+]
+</pre>
+</div>
+
+<div class="box">
+<h2>Category Ratings</h2>
+<pre>
+[
+ { category: "Electronic", avgCategoryRating: 3.75 },
+ { category: "Clothing", avgCategoryRating: 4.5 },
+ { category: "Appliances", avgCategoryRating: null }
+]
+</pre>
+</div>
+
+<p>Backend project built with Node.js and MongoDB.</p>
+
 </body>
 </html>
